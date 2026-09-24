@@ -5,6 +5,6 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/health
-    healthCheckTimeout: 300
     envVars:
       - key: GEMINI_API_KEY
+        sync: false
